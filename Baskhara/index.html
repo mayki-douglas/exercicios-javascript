@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular a Formula de Bhaskara</title>
+</head>
+<body>
+    <script type ="text/javascript">
+
+    var valorA = parseInt(window.prompt('Informe o valor A:'));
+    var valorB = parseInt(window.prompt('Informe o valor B:'));
+    var valorC = parseInt(window.prompt('Informe o valor C:'));
+
+    var coeficiente1;
+    var coeficiente2;
+
+    var delta = (valorB * valorB) - 4 * valorA * valorC;
+
+    coeficiente1 = (-valorB + Math.sqrt(delta)) / 2 * valorA;
+    coeficiente2 = (-valorB - Math.sqrt(delta)) / 2 * valorA;
+
+    window.alert('X = ' + coeficiente1 +
+    '\nY = '+ coeficiente2);
+
+    </script>
+</body>
+</html>
