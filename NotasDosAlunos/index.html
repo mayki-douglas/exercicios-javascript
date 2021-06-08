@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas dos Alunos</title>
+</head>
+<body>
+    <script type = 'text/javascript'>
+
+    var nomeDoAluno;
+    var nota1;
+    var nota2;
+    var media;
+
+    nomeDoAluno = window.prompt('informe o Nome do Aluno:');
+    nota1 = parseInt(window.prompt('Informe a nota 1 do Aluno ' + nomeDoAluno + ':'));
+    nota2 = parseInt(window.prompt('Informe a nota 2 do Aluno ' + nomeDoAluno + ':'));
+
+    media = (nota1 + nota2) / 2;
+
+    window.alert('Dados do Aluno \n' +
+    'Nome: ' + nomeDoAluno + '\n' +
+    'Nota 1: ' + nota1 + '\n' +
+    'Nota 2: ' + nota2 + '\n' +
+    'Média: ' + media);
+
+    if(media > 6) {window.alert('aprovado')}
+    else {window.alert('reprovado')};
+
+    </script>
+</body>
+</html>
